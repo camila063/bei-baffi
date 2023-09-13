@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../services/auth.service';
-import { FirestoreService } from 'src/app/shared/services/firestore.service';
+import { FirestoreService } from 'bei-baffi/src/app/shared/services/firestore.service';
 import { Usuario } from 'src/app/models/usuario';
 import { Router } from '@angular/router';
 
@@ -30,13 +30,11 @@ export class LoginComponent {
       contrasena: this.usuarios.contrasena
     };
     const res =  await this.servicioAuth.iniciarSesion(credenciales.email, credenciales.contrasena)
-    //metodo then cuando funciona correctamente
     .then(res=>{
       alert('ha accedido con exito');
       console.log(credenciales.email);
       this.router.navigate(['/inicio']);
     })
-    //metodo catch encapsula un fallo 
     .catch(error =>{
       alert('hubo un error al iniciar sesion \n'+error);
       console.log(credenciales.email);
