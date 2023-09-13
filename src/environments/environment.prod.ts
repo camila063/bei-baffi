@@ -1,14 +1,12 @@
 export const environmnent ={
     production: true,
-
-
-    firebaseConfig: {
-    apiKey: "AIzaSyBtReeabF3dnv8XkVIbobALtA7LKj_oxAA",
-    authDomain: "bei-baffi.firebaseapp.com",
-    projectId: "bei-baffi",
-    storageBucket: "bei-baffi.appspot.com",
-    messagingSenderId: "945181159735",
-    appId: "1:945181159735:web:fca320be4e2f4439d0aab2",
-    measurementId: "G-6RCZNT2C5J"
-  }
+    firebaseConfig : {
+      apiKey: "AIzaSyA6zousfXI10AzyWpMzpBAb5URGbYKPUOs",
+      authDomain: "bei-baffi-c072d.firebaseapp.com",
+      projectId: "bei-baffi-c072d",
+      storageBucket: "bei-baffi-c072d.appspot.com",
+      messagingSenderId: "26898009154",
+      appId: "1:26898009154:web:184875964040460300b1db",
+      measurementId: "G-9PYKD1EQ34"
+    }
 };
